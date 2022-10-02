@@ -10,8 +10,8 @@ import {
   Menu,
   MenuItem,
   Avatar,
+  styled,
 } from "@mui/material";
-import styled from "@emotion/styled";
 import MenuIcon from "@mui/icons-material/Menu";
 import { DropdownAreasAtuacao } from "./DropdownAreasAtuacao";
 import { useImages } from "../hooks/useImages";
@@ -38,7 +38,7 @@ export const TopBar = () => {
   };
   const pages = ["Quem somos", "Serviços", "Áreas de Atuação", "Contato"];
   return (
-    <StyledAppBar position="sticky" color="white">
+    <StyledAppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <StyledLogoButton>
@@ -73,11 +73,7 @@ export const TopBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography
-                    textAlign="center"
-                    color="secondary"
-                    variant="dark"
-                  >
+                  <Typography textAlign="center" color="secondary">
                     {page}
                   </Typography>
                 </MenuItem>
@@ -121,7 +117,6 @@ export const TopBar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  color: "white",
                   display: "block",
                   textTransform: "none",
                 }}
@@ -132,7 +127,6 @@ export const TopBar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  color: "white",
                   display: "block",
                   textTransform: "none",
                 }}
@@ -143,7 +137,6 @@ export const TopBar = () => {
                 onClick={(event) => handleOpenAreasMenu(event)}
                 sx={{
                   my: 2,
-                  color: "white",
                   display: "block",
                   textTransform: "none",
                 }}
@@ -158,7 +151,6 @@ export const TopBar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  color: "white",
                   display: "block",
                   textTransform: "none",
                 }}
@@ -180,6 +172,7 @@ const StyledAppBar = styled(AppBar)`
   height: 15vh;
   justify-content: center;
   padding: 0 5vw;
+  background-color: ${({ theme }) => theme.palette.background.default};
 `;
 
 const StyledLogoButton = styled(Button)`
@@ -189,17 +182,19 @@ const StyledLogoButton = styled(Button)`
   }
 `;
 const StyledButtonPortal = styled(Button)`
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.2rem;
   border: 3px solid;
   text-transform: none;
   padding: 0 15px;
+  height: 8vh;
+  align-self: center;
 `;
 const StyledButtonNav = styled(Button)`
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.2rem;
   text-transform: none;
-  color: #4c58a7;
+  color: ${({ theme }) => theme.palette.secondary.light};
   &:hover {
     background-color: transparent;
   }

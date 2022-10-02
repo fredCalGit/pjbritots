@@ -29,62 +29,58 @@ export const DropdownAreasAtuacao = ({
       }}
     >
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Advogados e Escritórios de Advocacia
         </StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Empresas Comerciais
         </StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Hospitais e Clínicas Médicas
         </StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
-          Empresas de TI
-        </StyledTypography>
+        <StyledTypography color="secondary">Empresas de TI</StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Lojas Virtuais / E-Commerce
         </StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Empresas do Ramo Imobiliário
         </StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Entidades sem fins lucrativos
         </StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Bares e Restaurantes
         </StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Serviços Educacionais
         </StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
-          Startups
-        </StyledTypography>
+        <StyledTypography color="secondary">Startups</StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Agropecuária e Agroindústria
         </StyledTypography>
       </MenuItem>
       <MenuItem>
-        <StyledTypography color="secondary" variant="dark">
+        <StyledTypography color="secondary">
           Serviços de Transporte
         </StyledTypography>
       </MenuItem>

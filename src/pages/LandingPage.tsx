@@ -1,10 +1,17 @@
 import React from "react";
-import { Container } from "@mui/material";
+import { Box, Container, styled } from "@mui/material";
+import { Hero } from "../components/Hero";
+import { Clients } from "../components/Clients";
+import { Missao } from "../components/Missao";
 
 export const LandingPage = () => {
   return (
-    <Container maxWidth={false}>
-      <h1>Here I am</h1>
-    </Container>
+    <StyledBox>
+      <Hero />
+      <Clients />
+      <Missao />
+    </StyledBox>
   );
 };
+
+const StyledBox = styled(Box)``;

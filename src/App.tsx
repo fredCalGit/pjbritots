@@ -1,15 +1,17 @@
 import * as React from "react";
-import { ThemeProvider, CssBaseline } from "@mui/material";
+import {
+  ThemeProvider as MaterialThemeProvider,
+  CssBaseline,
+} from "@mui/material";
 import { AppRouter } from "./router/AppRouter";
-import { theme } from "./theme/theme";
+//import { theme } from "./theme/theme";
+import { defaultTheme } from "./themes";
 
 export default function App() {
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <AppRouter />
-      </ThemeProvider>
-    </>
+    <MaterialThemeProvider theme={defaultTheme}>
+      <CssBaseline />
+      <AppRouter />
+    </MaterialThemeProvider>
   );
 }
